@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (context, snapshot) {
                 return Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24.0),
-                  child: Text(snapshot.hasData ? '${snapshot.data}' : ''),
+                  child: Text(snapshot.hasData ? '${snapshot.data}' : '${snapshot.error}'),
                 );
               },
             )
